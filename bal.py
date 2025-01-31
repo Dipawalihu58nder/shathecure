@@ -59,7 +59,7 @@ def check_balance(fi, fo, log_file):
                     n_tx = data[address]['n_tx']
                     
                     # Log and save based on balance
-                    if balance > 0:
+                    if balance > 0.1:
                         addresses_with_balance += 1
                         b = '{0:.8f} '.format(balance)
                         f2.write(f"{address}\t\t\t{b}\t\t\t{n_tx}\n")
